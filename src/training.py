@@ -1,15 +1,14 @@
-#import torch
-#import torch.nn as nn
+import torch
+import torch.nn as nn
 
-#import torch.optim as optim
-# import torchvision
-# import torchvision.models as models
-# from torchvision.models import ViT_B_16_Weights
-# from torchvision import transforms
-# from torch.utils.data import DataLoader
-# #from tensorrt_engine import download_test_data,download_train_data
-# from tqdm import tqdm
-# import os
+import torch.optim as optim
+import torchvision
+import torchvision.models as models
+from torchvision.models import ViT_B_16_Weights
+from torchvision import transforms
+from torch.utils.data import DataLoader
+from tqdm import tqdm
+import os
 
 def get_model_file_size(model=None,model_path=None):
     """Function to get the model size. It will be apply torch model load from torchvision or to torch saved model through the path
